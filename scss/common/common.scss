@@ -1,0 +1,100 @@
+body {
+  font-family: $font-family-main;
+  font-weight: 400;
+  font-size: 14px;
+  color: $color-black;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 30px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+//
+//.offcanvas {
+//  background: $color-three;
+//}
+//
+//a {
+//  text-decoration: none;
+//
+//  &:hover {
+//    color: $color-three;
+//    transition: .3s;
+//  }
+//
+//}
+//
+//li {
+//  list-style-type: none;
+//}
+//
+//.btn-link-my {
+//  display: inline-block;
+//  background: $color-second;
+//  padding: 15px 24px;
+//  font-family: $font-family-main;
+//  color: $color-first;
+//  text-transform: uppercase;
+//  border-radius: 5px;
+//  border: 1px solid transparent;
+//}
+//
+//.btn-link-my:hover {
+//  background: $color-first;
+//  color: $color-second;
+//  border-color: $color-second;
+//}
+//
+//.sign-author {
+//  font-size: $font-sm;
+//  color: #B2B2BF;
+//  margin-bottom: 40px;
+//}
+//
+//.box-link {
+//  color: $color-second;
+//  text-transform: uppercase;
+//  font-size: $font-xs;
+//}
+//
+//.box-link:hover {
+//  color: $color-first;
+//}
+//
+//
+//@media (max-width: 992px) {
+//  .btn-link-my {
+//    width: 60%;
+//  }
+//}
+//
+//@media (max-width: 576px) {
+//  .btn-link-my {
+//    width: 100%;
+//  }
+//}

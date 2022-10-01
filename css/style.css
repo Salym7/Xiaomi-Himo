@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../Inter-Bold.woff2") format("woff2"), url("../Inter-Bold.woff") format("woff"), url("../Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Inter-Regular.woff2") format("woff2"), url("../Inter-Regular.woff") format("woff"), url("../Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #131313;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 30px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin-right: 70px;
+}
+.menu__list {
+  display: flex;
+  gap: 10px;
+}
+.menu__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  padding: 42px 20px;
+}
+.menu__link:hover {
+  background: #131313;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+}
+
+.bike {
+  padding-top: 100px;
+  margin-bottom: 150px;
+}
+.bike__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.bike__col {
+  padding-top: 70px;
+  width: 540px;
+}
+.bike__slide {
+  max-width: 630px;
+}
+.bike__slide-img {
+  margin-bottom: 25px;
+}
+.bike__slide-inner {
+  margin-bottom: 25px;
+}
+.bike__slide-inner img {
+  width: 100%;
+}
+.bike__slide-list {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bike__slide-list-item {
+  max-width: 160px;
+}
+.bike__slide-list-item span {
+  text-align: center;
+  display: block;
+}
+.bike__slide-list-item .value {
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.bike__slide-list-item .key {
+  font-size: 12px;
+}
+.bike__title {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  text-align: left;
+}
+.bike__subtitle {
+  color: #6f6f6f;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  margin: 0 0 60px;
+}
+.bike__text {
+  width: 420px;
+  margin-bottom: 20px;
+  line-height: 17px;
+}
+.bike__link {
+  margin-top: 80px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.1em;
+  color: #FFFFFF;
+  background: #131313;
+  padding: 28px 81px;
+}
+.bike__link:hover {
+  background: #ff4040;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .bike__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .bike__inner {
+    flex-direction: column;
+  }
+  .bike__col {
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .bike__text {
+    width: 100%;
+  }
+  .bike__slide {
+    max-width: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .bike {
+    padding-top: 50px;
+    margin-bottom: 70px;
+  }
+  .bike__subtitle {
+    margin-bottom: 30px;
+  }
+  .bike__link {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1rem;
+  }
+  .bike__slide-list {
+    flex-wrap: wrap;
+  }
+  .bike__slide-list-item {
+    max-width: none;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .bike__slide-list-item .value {
+    margin-bottom: 7px;
+  }
+}
+
+.banner {
+  margin-bottom: 150px;
+}
+.banner__inner {
+  display: flex;
+  gap: 60px;
+}
+.banner__description {
+  flex-basis: 460px;
+}
+.banner__description-box {
+  margin-bottom: 50px;
+}
+.banner__description-box-text {
+  line-height: 17px;
+}
+
+@media (max-width: 992px) {
+  .banner__img img {
+    width: 100%;
+  }
+  .banner__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .banner__description {
+    flex-basis: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

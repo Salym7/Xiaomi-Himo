@@ -1,0 +1,19 @@
+.banner {
+  margin-bottom: 150px;
+
+  &__inner {
+    display: flex;
+    gap: 60px;
+  }
+  &__description {
+    flex-basis: 460px;
+    &-box {
+      margin-bottom: 50px;
+      &-text {
+        line-height: 17px;
+      }
+    }
+  }
+
+
+}

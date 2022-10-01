@@ -1,0 +1,56 @@
+.bike {
+  @media (max-width: 1200px) {
+    &__title {
+      font-size: 50px;
+    }
+  }
+  @media (max-width: 992px) {
+    &__inner {
+      flex-direction: column;
+    }
+    &__col {
+      padding-top: 0;
+      width: 100%;
+      margin-bottom: 70px;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__slide {
+      max-width: none;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 576px) {
+    padding-top: 50px;
+    margin-bottom: 70px;
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+    &__link {
+      margin-top: 50px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      width: 100%;
+      letter-spacing: 1rem;
+    }
+    &__slide-list {
+      flex-wrap: wrap;
+
+      &-item {
+        max-width: none;
+        width: 50%;
+        margin-bottom: 20px;
+
+        .value {
+          margin-bottom: 7px;
+        }
+      }
+    }
+
+  }
+
+}
