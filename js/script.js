@@ -8,19 +8,19 @@ let i = 0
 
 slide.addEventListener('click', () => {
     slideBtn[i].classList.remove('active')
-    images[i].style.display = 'none'
+    images[i].classList.remove('showed')
     i++
     if (i >= images.length) i = 0
-    images[i].style.display = 'block'
+    images[i].classList.add('showed')
     slideBtn[i].classList.add('active')
 })
 
 slideBtn.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        images.forEach(i => i.style.display = 'none')
+        images.forEach(i => i.classList.remove('showed'))
         slideBtn.forEach(i => i.classList.remove('active'))
         i = index
-        images[i].style.display = 'block'
+        images[i].classList.add('showed')
         slideBtn[i].classList.add('active')
     })
 })
