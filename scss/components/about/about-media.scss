@@ -1,0 +1,16 @@
+.about {
+  @media (max-width: 1200px) {
+    &__col {
+      flex: 0 0 450px;
+    }
+  }
+  @media (max-width: 992px) {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+    &__img {
+      max-width: none;
+      display: block;
+    }
+  }
+}

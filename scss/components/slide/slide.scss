@@ -1,0 +1,45 @@
+.slide {
+  padding-top: 150px;
+
+  &__btn-group {
+    input {
+      padding: 0;
+      width: 4px;
+      height: 25px;
+      background: $color-black;
+      border: none;
+      cursor: pointer;
+      border-radius: 1px;
+      list-style: none;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .active {
+      background: $color-red;
+    }
+
+  }
+
+  &__line {
+    max-width: 1150px;
+    display: inline;
+
+    img {
+      width: 100%;
+      display: none;
+      position: absolute;
+    }
+
+    img:first-child {
+      display: block;
+    }
+  }
+
+  &__inner {
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right
+  }
+}
