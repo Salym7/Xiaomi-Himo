@@ -130,6 +130,7 @@ li {
 }
 .bike__slide-inner img {
   width: 100%;
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.1));
 }
 .bike__slide-list {
   max-width: 500px;
@@ -192,8 +193,8 @@ li {
 .bike__btn-group {
   position: absolute;
   right: 0;
-  top: 0;
-  z-index: 10;
+  top: 40px;
+  z-index: 1;
 }
 
 @media (max-width: 1200px) {

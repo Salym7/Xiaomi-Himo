@@ -38,6 +38,7 @@
 
       img {
         width: 100%;
+        filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.1));
       }
     }
 
@@ -114,8 +115,8 @@
   &__btn-group {
     position: absolute;
     right: 0;
-    top: 0;
-    z-index: 10;
+    top: 40px;
+    z-index: 1;
   }
 
 }
