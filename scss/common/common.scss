@@ -34,6 +34,27 @@ li {
   margin-bottom: 10px;
 }
 
+.btn-group {
+  input {
+    padding: 0;
+    width: 4px;
+    height: 25px;
+    background: $color-black;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px;
+    list-style: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .active, input:hover {
+    background: $color-red;
+    transition: 0.5s;
+  }
+
+}
+
 //
 //.offcanvas {
 //  background: $color-three;

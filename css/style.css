@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Inter";
-  src: url("../Inter-Bold.woff2") format("woff2"), url("../Inter-Bold.woff") format("woff"), url("../Inter-Bold.ttf") format("truetype");
+  src: url("/fonts/Inter-Bold.woff2") format("woff2"), url("/fonts/Inter-Bold.woff") format("woff"), url("/fonts/Inter-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../Inter-Regular.woff2") format("woff2"), url("../Inter-Regular.woff") format("woff"), url("../Inter-Regular.ttf") format("truetype");
+  src: url("/fonts/Inter-Regular.woff2") format("woff2"), url("/fonts/Inter-Regular.woff") format("woff"), url("/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -45,6 +45,23 @@ li {
   font-weight: 700;
   line-height: 19px;
   margin-bottom: 10px;
+}
+
+.btn-group input {
+  padding: 0;
+  width: 4px;
+  height: 25px;
+  background: #131313;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  list-style: none;
+  margin-bottom: 10px;
+  display: block;
+}
+.btn-group .active, .btn-group input:hover {
+  background: #ff4040;
+  transition: 0.5s;
 }
 
 .header__inner {
@@ -95,6 +112,18 @@ li {
 }
 .bike__slide-img {
   margin-bottom: 25px;
+  position: relative;
+}
+.bike__slide-img img {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.bike__slide-img .showed {
+  opacity: 1;
+  position: static;
 }
 .bike__slide-inner {
   margin-bottom: 25px;
@@ -156,6 +185,15 @@ li {
 .bike__link:hover {
   background: #ff4040;
   transition: 0.5s;
+}
+.bike__slide-inner-btn {
+  position: relative;
+}
+.bike__btn-group {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
 }
 
 @media (max-width: 1200px) {
@@ -296,32 +334,16 @@ li {
 .slide {
   padding-top: 150px;
 }
-.slide__btn-group input {
-  padding: 0;
-  width: 4px;
-  height: 25px;
-  background: #131313;
-  border: none;
-  cursor: pointer;
-  border-radius: 1px;
-  list-style: none;
-  margin-bottom: 10px;
-  display: block;
-}
-.slide__btn-group .active {
-  background: #ff4040;
-}
 .slide__line {
   position: relative;
   max-width: 1150px;
 }
 .slide__line img {
   width: 100%;
-  right: 0;
-  top: 0;
   position: absolute;
+  right: 0;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 .slide__line .showed {
   opacity: 1;

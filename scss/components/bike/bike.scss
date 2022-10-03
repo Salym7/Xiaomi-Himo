@@ -17,6 +17,20 @@
 
     &-img {
       margin-bottom: 25px;
+      position: relative;
+
+      img {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transition: opacity .5s;
+      }
+
+      .showed {
+        opacity: 1;
+        position: static;
+      }
     }
 
     &-inner {
@@ -93,5 +107,15 @@
     transition: 0.5s;
   }
 
+  &__slide-inner-btn {
+    position: relative;
+  }
+
+  &__btn-group {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  }
 
 }
