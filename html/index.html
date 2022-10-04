@@ -17,13 +17,13 @@
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list">
-                        <a href="" class="menu__link">Описание</a>
+                        <a href="#banner" class="menu__link">Описание</a>
                     </li>
                     <li class="menu__list">
-                        <a href="" class="menu__link">Характеристики</a>
+                        <a href="#about" class="menu__link">Характеристики</a>
                     </li>
                     <li class="menu__list">
-                        <a href="" class="menu__link">Cтоимость</a>
+                        <a href="#price" class="menu__link">Cтоимость</a>
                     </li>
                 </ul>
             </nav>
@@ -44,7 +44,7 @@
                         способен проезжать на одном заряде до 100 км, что определенно выше, чем у большинства
                         конкурентов. А большие колеса с пневматическими шинами, дисковые тормоза, 7-скоростная
                         трансмиссия и эргономичное сидение делают каждую поездку гораздо приятнее. </p>
-                    <a href="" class="bike__link">ЗАКАЗАТЬ</a>
+                    <a href="#price" class="bike__link btn">ЗАКАЗАТЬ</a>
                 </div>
                 <div class="bike__slide">
                     <div class="bike__slide-inner">
@@ -87,7 +87,7 @@
             </div>
         </div>
     </section>
-    <section class="description">
+    <section class="banner" id="banner">
         <div class="container">
             <div class="banner__inner">
                 <div class="banner__img">
@@ -142,7 +142,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
                 <div class="about__col">
@@ -265,6 +265,57 @@
                     <img src="../assets/slider3.jpg" alt="bike">
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="price" id="price">
+        <div class="container">
+            <div class="price__inner">
+                <form class="form" action="#">
+                    <h3 class="subtitle">Заказать</h3>
+                    <p class="form__text">Если Вы хотите заказать велосипед, оставьте свой контакт и наш менеджер
+                        перезвонит вам в ближайшее время
+                    </p>
+                    <label><input class="form__input-name" type="text" name="name" placeholder="имя"></label>
+                    <label><input class="form__input-phone" type="tel" name="phone" placeholder="телефон"></label>
+                    <p class="form__input-text">
+                        выберите желаемый цвет
+                    </p>
+                    <div class="form__label">
+                        <label class="form__label-box">
+                            <input class="form__input-radio" name="color" type="radio">
+                            <span class="form__input-radio-style form__input-radio-style-gray"></span>
+                        </label>
+                        <label class="form__label-box select">
+                            <input class="form__input-radio" name="color" type="radio" checked>
+                            <span class="form__input-radio-style form__input-radio-style-white"></span>
+
+                        </label>
+                        <label class="form__label-box">
+                            <input class="form__input-radio" name="color" type="radio">
+                            <span class="form__input-radio-style form__input-radio-style-red"></span>
+
+                        </label>
+                    </div>
+
+
+                    <button class="form__btn btn" type="submit">ЗАКАЗАТЬ</button>
+                </form>
+                <div class="price__group-img">
+                    <div class="price__goods">
+                        <p class="price__goods-price">33 999 грн. </p>
+                        <img src="../assets/price-gray.jpg" alt="bike">
+                    </div>
+                    <div class="price__goods showed">
+                        <p class="price__goods-price">32 999 грн. </p>
+                        <img src="../assets/price-white.jpg" alt="bike">
+                    </div>
+                    <div class="price__goods">
+                        <p class="price__goods-price">34 999 грн. </p>
+                        <img src="../assets/price-red.jpg" alt="bike">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 </main>

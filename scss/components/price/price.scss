@@ -1,0 +1,158 @@
+.price {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__group-img {
+    max-width: 620px;
+    position: relative;
+  }
+
+  .form {
+    max-width: 420px;
+
+    &__label {
+      display: flex;
+      gap: 23px;
+      margin-bottom: 50px;
+
+      .select {
+        box-shadow: 0 0 10px $color-grey;
+      }
+
+      &-box {
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      &-box:hover {
+        box-shadow: 0 0 10px $color-grey;
+      }
+    }
+
+    &__input-radio {
+      position: absolute;
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      clip: rect(0 0 0 0);
+
+      &-style-gray {
+        background: $color-grey;
+      }
+
+      &-style-white {
+        background: $color-white;
+        border: 1px $color-grey solid;
+        border-radius: 10px;
+      }
+
+      &-style-red {
+        background: $color-red;
+      }
+    }
+
+    &__input-radio-style {
+      width: 80px;
+      height: 12px;
+      display: block;
+    }
+
+
+    &__label {
+      display: flex;
+      margin-bottom: 50px;
+      gap: 23px;
+
+    }
+
+    &__text {
+      width: 300px;
+      margin-top: 41px;
+      margin-bottom: 30px;
+    }
+
+    &__input {
+      &-name, &-phone {
+        width: 100%;
+        border: none;
+        border-bottom: 1px $color-black solid;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        outline: none;
+      }
+
+      &-name::placeholder,
+      &-phone::placeholder,
+      &-text {
+        color: $color-grey;
+        opacity: 0.5;
+      }
+
+      &-text {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+
+  &__goods-price::after {
+    position: absolute;
+    content: '';
+    top: -43px;
+    left: -26px;
+    width: 221px;
+    height: 100px;
+    border: 1px $color-red solid;
+    border-radius: 50%;
+  }
+
+  &__goods {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity .5s;
+
+    img {
+      width: 100%;
+    }
+
+    &-price {
+      font-size: 32px;
+      z-index: 1;
+      position: absolute;
+      top: 30px;
+      left: -59px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: -43px;
+        left: -26px;
+        width: 221px;
+        height: 100px;
+        border: 1px $color-red solid;
+        border-radius: 50%;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: -27px;
+        left: -26px;
+        width: 221px;
+        height: 100px;
+        border: 1px $color-red solid;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .showed {
+    opacity: 1;
+    position: static;
+  }
+}

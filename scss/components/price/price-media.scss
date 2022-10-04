@@ -1,0 +1,11 @@
+.price {
+  @media (max-width: 992px) {
+    &__group-img {
+      margin-top: auto;
+    }
+    &__goods-price {
+      top: -100px;
+      left: 32px;
+    }
+  }
+}

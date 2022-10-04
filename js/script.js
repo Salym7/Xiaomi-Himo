@@ -8,8 +8,22 @@ const slideImages = document.querySelectorAll('.slide__line img')
 const slideBody = document.querySelector('.slide__line')
 const slideDots = document.querySelectorAll('.slide__btn-group input')
 
+const priceRadio = document.querySelectorAll('.form__label-box')
+const priceImages = document.querySelectorAll('.price__goods')
+
 let indexSlide = 0
 let indexBike = 0
+let indexPrice = 1
+
+priceRadio.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        priceImages.forEach(i => i.classList.remove('showed'))
+        priceRadio.forEach(i => i.classList.remove('select'))
+        indexPrice = index
+        priceImages[indexPrice].classList.add('showed')
+        priceRadio[indexPrice].classList.add('select')
+    })
+})
 
 bikeBody.addEventListener('click', () => {
     bikeDots[indexBike].classList.remove('active')

@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-family-main;
   font-weight: 400;
@@ -32,6 +40,8 @@ li {
   font-weight: 700;
   line-height: 19px;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 .btn-group {
@@ -53,6 +63,24 @@ li {
     transition: 0.5s;
   }
 
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.1em;
+  color: $color-white;
+  background: $color-black;
+  padding: 28px 70px;
+  border: none;
+}
+
+.btn:hover {
+  background: $color-red;
+  transition: 0.5s;
 }
 
 //
