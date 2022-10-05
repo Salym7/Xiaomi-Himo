@@ -1,36 +1,12 @@
-//.footer {
-//  @media (max-width: 992px) {
-//    &__col {
-//      margin-bottom: 30px;
-//    }
-//  }
-//  @media (max-width: 768px) {
-//    &__social {
-//      justify-content: space-around;
-//    }
-//    h6 {
-//      text-align: center;
-//      font-size: $font-lg;
-//    }
-//    .nav-item {
-//
-//      text-align: center;
-//    }
-//    .nav-link {
-//      font-size: $font-lg;
-//    }
-//  }
-//  @media (max-width: 576px) {
-//    &__copy {
-//      padding: 16px 30px;
-//    }
-//  }
-//  @media (max-width: 450px) {
-//    &__copy {
-//      span {
-//        display: block;
-//        margin-bottom: 20px;
-//      }
-//    }
-//  }
-//}
+.footer {
+  @media (max-width: 768px) {
+    &__inner {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+  }
+
+  &__contact, &__politic {
+    align-self: center;
+  }
+}

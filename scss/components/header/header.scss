@@ -2,27 +2,31 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
-
-
 }
 
 .menu {
   margin-right: 70px;
+
   &__list {
     display: flex;
     gap: 10px;
-
   }
-  &__link{
+
+  &__item {
+    padding: 42px 20px;
+  }
+
+  &__link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    padding: 42px 20px;
+
+    transition: .5s;
 
   }
-  &__link:hover {
+
+  &__item:hover {
     background: $color-black;
     color: $color_white;
     transition: 0.5s;

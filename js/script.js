@@ -11,9 +11,16 @@ const slideDots = document.querySelectorAll('.slide__btn-group input')
 const priceRadio = document.querySelectorAll('.form__label-box')
 const priceImages = document.querySelectorAll('.price__goods')
 
+// const form = document.querySelectorAll('.form')
+
 let indexSlide = 0
 let indexBike = 0
 let indexPrice = 1
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault()
+//
+// })
 
 priceRadio.forEach((btn, index) => {
     btn.addEventListener('click', () => {
