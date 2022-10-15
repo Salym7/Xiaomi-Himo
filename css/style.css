@@ -439,6 +439,7 @@ li {
 .header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .menu {
@@ -448,14 +449,13 @@ li {
   display: flex;
   gap: 10px;
 }
-.menu__item {
-  padding: 42px 20px;
-}
 .menu__link {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  transition: 0.5s;
+  padding: 42px 20px;
+  display: inline-block;
+  transition: 0.3s;
 }
 .menu__item:hover {
   background: #131313;
@@ -463,34 +463,90 @@ li {
   transition: 0.5s;
 }
 
+.menu-mob {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(30, 29, 29, 0.8);
+  padding: 60px 60px;
+  transform: translate(0, -105%);
+  transition: 0.3s ease 0s;
+}
+.menu-mob__item {
+  margin-bottom: 30px;
+}
+.menu-mob__link {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-decoration: none;
+}
+.menu-mob__link:hover {
+  color: #ff4040;
+  transition: 0.3s ease 0s;
+}
+
+.active {
+  transform: translate(0, 0);
+}
+
+.menu-button {
+  width: 35px;
+  height: 20px;
+  z-index: 6;
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+.menu-button span, .menu-button:before, .menu-button:after {
+  left: 0;
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  transition: 0.3s;
+  background-color: #131313;
+}
+.menu-button:before {
+  top: 0;
+  content: "";
+}
+.menu-button:after {
+  bottom: 0;
+  content: "";
+}
+.menu-button span {
+  top: 50%;
+  transform: scale(1) translate(0px, -50%);
+}
+
+.active-btn span {
+  transform: scale(0);
+  visibility: hidden;
+  transition: 0s;
+}
+.active-btn:before {
+  width: 40px;
+  top: 10px;
+  transform: rotate(-45deg);
+}
+.active-btn:after {
+  width: 40px;
+  bottom: 8px;
+  transform: rotate(45deg);
+}
+
 @media (max-width: 768px) {
   .header .menu {
-    margin-right: 0;
+    display: none;
   }
-  .header__inner {
-    flex-direction: column;
-    align-items: center;
+  .header .menu-button {
+    display: block;
   }
   .header .logo img {
     width: 75%;
   }
-  .header .menu__item {
-    padding: 20px 10px;
-  }
 }
-@media (max-width: 450px) {
-  .header .logo, .header .menu {
-    align-self: start;
-  }
-  .header .menu__list {
-    gap: 0;
-  }
-  .header .menu__item {
-    padding: 15px 5px;
-    font-size: 13px;
-  }
-}
-
 .bike {
   padding-top: 100px;
   margin-bottom: 150px;
